@@ -1,5 +1,5 @@
 # BÀI TẬP LỚN: DỰ ÁN WEB BÁN XE Ô TÔ
-* **Môn học:** Cơ sở dữ liệu / Lập trình Web
+* **Môn học:** Lập trình với ngôn ngữ JavaScript
 ---
 
 ## 🛠️ Hướng dẫn cài đặt và triển khai ứng dụng (Deployment Guide)
