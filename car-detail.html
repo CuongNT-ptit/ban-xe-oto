@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết xe | ezoto</title>
+    <link rel="stylesheet" href="car-detail.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo-area">
+            <a href="web.html" class="logo-link" style="text-decoration: none;">
+                <span class="logo" style="font-size:32px; font-weight:bold;">
+                    <span class="ez" style="color: #007bff;">ez</span><span class="oto" style="color: #ff9800;">oto</span>
+                </span>
+            </a>
+            <a href="web.html" class="nav-link" style="text-decoration: none; color: #333; font-weight: bold; margin-left: 20px;">Trang chủ</a>
+        </div>
+        <nav></nav> 
+    </div>
+</header>
+
+<div class="container">
+    <div class="detail-layout">
+        <div class="left-section">
+            <div class="main-image-box">
+                <img id="mainImage" src="" alt="Xe chính">
+            </div>
+        </div>
+        
+        <div class="thumbs">
+            <img id="img1" src="" alt="Ảnh 1">
+            <img id="img2" src="" alt="Ảnh 2">
+            <img id="img3" src="" alt="Ảnh 3">
+        </div>
+
+        <div class="info-card">
+            <h1 id="tenXe"></h1>
+            <div id="giaXe" class="price"></div>
+
+            <div class="specs">
+                <div class="spec-item"><b>Hãng xe: </b><span id="hangXe"></span></div>
+                <div class="spec-item"><b>Năm SX: </b><span id="namSX"></span></div>
+                <div class="spec-item"><b>Nhiên liệu: </b><span id="nhienLieu"></span></div>
+                <div class="spec-item"><b>Hộp số: </b><span id="hopSo"></span></div>
+            </div>
+
+            <button class="btn-contact">LIÊN HỆ NGAY</button>
+        </div>
+    </div>
+
+    <div class="other-cars">
+        <h2>CÁC XE KHÁC</h2>
+        <div id="otherCars" class="other-cars-grid"></div>
+    </div>
+</div>
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Hotline Liên Hệ</h3>
+        <p>Chào mừng bạn đến với ezoto. Vui lòng liên hệ với chúng tôi qua số điện thoại dưới đây để được hỗ trợ tư vấn tốt nhất:</p>
+        <div class="hotline">1900 8888 (08:00 - 21:00)</div>
+    </div>
+</div>
+
+<script src="car-detail.js"></script>
+</body>
+</html>s

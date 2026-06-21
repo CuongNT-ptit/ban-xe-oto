@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ezoto - Mua Bán Ô Tô Cũ Giá Tốt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+    <div class="top-banner">
+        🔥 Chào mừng bạn đến với ezoto! Nền tảng mua bán ô tô cũ uy tín hàng đầu Hà Nội. 
+        <span class="close-banner"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo-area">
+                <a href="#" class="logo">ez<span>oto</span></a>
+            </div>
+            <div class="header-icons">
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-phone hotline-icon" title="Liên hệ hotline"></i>
+            </div>
+        </div>
+    </header>
+
+    <div id="hotline-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <i class="fa-solid fa-headset modal-icon"></i>
+                <h2>Hotline Liên Hệ</h2>
+                <p>Chào mừng bạn đến với <strong>ezoto</strong>. Vui lòng liên hệ với chúng tôi qua số điện thoại dưới đây để được hỗ trợ tư vấn tốt nhất:</p>
+                <div class="phone-number">1900 8888 (08:00 - 21:00)</div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="main-white-box">
+            
+            <div class="breadcrumb">ezoto / Ô tô / Ô tô Hà Nội</div>
+            
+            <div class="page-title-section" style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                <h1 class="page-title">Mua bán ô tô cũ Hà Nội</h1>
+                <button class="btn-save-search" style="padding: 8px 12px; border-radius: 5px; cursor: pointer; border: 1px solid #ccc; background: #fff;">
+                    <i class="fa-regular fa-bookmark"></i> Lưu tìm kiếm
+                </button>
+            </div>
+            <p class="page-desc" style="margin: 10px 0;">
+                Mua bán ô tô cũ Hà Nội với hơn 3.000 xe đang được đăng bán trên ezoto
+            </p>
+
+            <!-- Bộ lọc tìm kiếm -->
+            <div class="filter-container">
+                <div class="filter-group">
+                    <select id="filter-price" class="filter-select-box">
+                        <option value="">Giá (Tất cả)</option>
+                        <option value="asc">Giá: Thấp đến Cao</option>
+                        <option value="desc">Giá: Cao đến Thấp</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select id="filter-year" class="filter-select-box">
+                        <option value="">Năm sản xuất (Tất cả)</option>
+                        <option value="asc">Năm: Cũ đến Mới</option>
+                        <option value="desc">Năm: Mới đến Cũ</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select id="filter-brand" class="filter-select-box">
+                        <option value="">Hãng xe (Tất cả)</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Kia">Kia</option>
+                        <option value="Ford">Ford</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select id="filter-fuel" class="filter-select-box">
+                        <option value="">Nhiên liệu (Tất cả)</option>
+                        <option value="Xăng">Xăng</option>
+                        <option value="Dầu Diesel">Dầu Diesel</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select id="filter-gearbox" class="filter-select-box">
+                        <option value="">Hộp số (Tất cả)</option>
+                        <option value="Số sàn">Số sàn</option>
+                        <option value="Số tự động">Số tự động</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select id="filter-status" class="filter-select-box">
+                        <option value="">Tình trạng (Tất cả)</option>
+                        <option value="Mới">Mới</option>
+                        <option value="Qua sử dụng">Qua sử dụng</option>
+                    </select>
+                </div>
+                <button id="btn-submit-search" class="filter-search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm
+                </button>
+            </div>
+
+            <div class="content-layout">              
+                <div>                   
+                    <div class="list-header">
+                        <!-- Nút chuyển đổi dạng hiển thị: Danh sách / Lưới -->
+                        <div class="list-display-options">
+                            <button id="btn-view-list" class="view-toggle-btn active" title="Dạng danh sách">
+                                <i class="fa-solid fa-list"></i> Danh sách
+                            </button>
+                            <button id="btn-view-grid" class="view-toggle-btn" title="Dạng lưới">
+                                <i class="fa-solid fa-table-cells-large"></i> Dạng lưới
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Vùng hiển thị danh sách xe -->
+                    <div class="product-list" id="danh-sach-xe">
+                    </div>
+                </div>
+
+                <!-- Sidebar Top người bán -->
+                <div class="sidebar-card">
+                    <div class="sidebar-title">
+                        🥇 Top người bán xe - Hà Nội 🥇
+                    </div>
+                    <div class="sidebar-subtitle">Kết nối với người bán có tin đăng phù hợp với bạn</div>
+                    <div class="seller-item">
+                        <div class="seller-avatar">MB</div>
+                        <div class="seller-name">Mercedes Benz Hà Nội</div>
+                    </div>
+                    <div class="seller-item">
+                        <div class="seller-avatar">TH</div>
+                        <div class="seller-name">Toyota Hoàn Kiếm</div>
+                    </div>
+                    <div class="seller-item">
+                        <div class="seller-avatar">HD</div>
+                        <div class="seller-name">Honda Tây Hồ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="web.js"></script>
+</body>
+</html>
