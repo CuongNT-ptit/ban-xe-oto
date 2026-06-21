@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
+-- MariaDB dump 10.19  Distrib 10.4.32-MariaDB, for Win64 (AMD64)
 --
--- Host: 127.0.0.1    Database: phpmyadmin
+-- Host: localhost    Database: btjvscr
 -- ------------------------------------------------------
--- Server version	5.5.5-10.4.32-MariaDB
+-- Server version	10.4.32-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,7 +21,7 @@
 
 DROP TABLE IF EXISTS `pma__bookmark`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__bookmark` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `dbase` varchar(255) NOT NULL DEFAULT '',
@@ -47,7 +47,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__central_columns`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__central_columns` (
   `db_name` varchar(64) NOT NULL,
   `col_name` varchar(64) NOT NULL,
@@ -76,7 +76,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__column_info`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__column_info` (
   `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
   `db_name` varchar(64) NOT NULL DEFAULT '',
@@ -108,7 +108,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__designer_settings`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__designer_settings` (
   `username` varchar(64) NOT NULL,
   `settings_data` text NOT NULL,
@@ -131,7 +131,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__export_templates`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__export_templates` (
   `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(64) NOT NULL,
@@ -158,7 +158,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__favorite`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__favorite` (
   `username` varchar(64) NOT NULL,
   `tables` text NOT NULL,
@@ -181,7 +181,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__history`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__history` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(64) NOT NULL DEFAULT '',
@@ -209,7 +209,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__navigationhiding`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__navigationhiding` (
   `username` varchar(64) NOT NULL,
   `item_name` varchar(64) NOT NULL,
@@ -235,7 +235,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__pdf_pages`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__pdf_pages` (
   `db_name` varchar(64) NOT NULL DEFAULT '',
   `page_nr` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -260,7 +260,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__recent`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__recent` (
   `username` varchar(64) NOT NULL,
   `tables` text NOT NULL,
@@ -283,7 +283,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__relation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__relation` (
   `master_db` varchar(64) NOT NULL DEFAULT '',
   `master_table` varchar(64) NOT NULL DEFAULT '',
@@ -311,7 +311,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__savedsearches`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__savedsearches` (
   `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(64) NOT NULL DEFAULT '',
@@ -338,7 +338,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__table_coords`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__table_coords` (
   `db_name` varchar(64) NOT NULL DEFAULT '',
   `table_name` varchar(64) NOT NULL DEFAULT '',
@@ -364,7 +364,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__table_info`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__table_info` (
   `db_name` varchar(64) NOT NULL DEFAULT '',
   `table_name` varchar(64) NOT NULL DEFAULT '',
@@ -388,7 +388,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__table_uiprefs`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__table_uiprefs` (
   `username` varchar(64) NOT NULL,
   `db_name` varchar(64) NOT NULL,
@@ -414,7 +414,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__tracking`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__tracking` (
   `db_name` varchar(64) NOT NULL,
   `table_name` varchar(64) NOT NULL,
@@ -445,7 +445,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__userconfig`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__userconfig` (
   `username` varchar(64) NOT NULL,
   `timevalue` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
@@ -470,7 +470,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__usergroups`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__usergroups` (
   `usergroup` varchar(64) NOT NULL,
   `tab` varchar(64) NOT NULL,
@@ -494,7 +494,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `pma__users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pma__users` (
   `username` varchar(64) NOT NULL,
   `usergroup` varchar(64) NOT NULL,
@@ -510,60 +510,6 @@ LOCK TABLES `pma__users` WRITE;
 /*!40000 ALTER TABLE `pma__users` DISABLE KEYS */;
 /*!40000 ALTER TABLE `pma__users` ENABLE KEYS */;
 UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2026-05-23 13:36:08
--- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
---
--- Host: 127.0.0.1    Database: test
--- ------------------------------------------------------
--- Server version	5.5.5-10.4.32-MariaDB
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2026-05-23 13:36:09
--- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
---
--- Host: 127.0.0.1    Database: ezoto_db
--- ------------------------------------------------------
--- Server version	5.5.5-10.4.32-MariaDB
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
 -- Table structure for table `xe_oto`
@@ -571,78 +517,21 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `xe_oto`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `xe_oto` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `ten_xe` varchar(255) NOT NULL,
-  `hang_xe` varchar(100) NOT NULL,
-  `nam_san_xuat` year(4) NOT NULL,
-  `nhien_lieu` varchar(50) NOT NULL,
-  `hop_so` varchar(50) NOT NULL,
-  `tinh_trang` varchar(50) NOT NULL,
-  `loai_nguoi_ban` varchar(50) NOT NULL,
-  `so_km` varchar(50) NOT NULL,
-  `xuat_xu` varchar(100) DEFAULT NULL,
-  `gia_xe` bigint(20) NOT NULL,
-  `hinh_anh` text DEFAULT NULL,
-  `ngay_dang` datetime DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `xe_oto`
---
-
-LOCK TABLES `xe_oto` WRITE;
-/*!40000 ALTER TABLE `xe_oto` DISABLE KEYS */;
-INSERT INTO `xe_oto` VALUES (1,'Toyota Camry 2.5Q 2021','Toyota',2021,'Xăng','Số tự động','Qua sử dụng','Bán chuyên','45000','Nhật Bản',980000000,'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(2,'Honda CR-V 1.5L Turbo 2020','Honda',2020,'Xăng','Số tự động','Qua sử dụng','Cá nhân','62000','Thái Lan',850000000,'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(3,'Mazda CX-5 2.0 Premium 2022','Mazda',2022,'Xăng','Số tự động','Mới','Bán chuyên','12000','Việt Nam',920000000,'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(4,'Hyundai Tucson 2.0 AT 2019','Hyundai',2019,'Xăng','Số tự động','Qua sử dụng','Cá nhân','78000','Hàn Quốc',720000000,'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(5,'Kia Seltos 1.4 Turbo Premium 2021','Kia',2021,'Xăng','Số tự động','Qua sử dụng','Cá nhân','30000','Hàn Quốc',650000000,'https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(6,'Ford Ranger Wildtrak 4x4 2020','Ford',2020,'Dầu Diesel','Số tự động','Qua sử dụng','Bán chuyên','55000','Thái Lan',780000000,'https://images.unsplash.com/photo-1532581291347-9c39cf10a73c?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(7,'Nissan X-Trail 2.0 SL 2018','Nissan',2018,'Xăng','Số tự động','Qua sử dụng','Cá nhân','90000','Nhật Bản',680000000,'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(8,'Toyota Fortuner 2.7V AT 2019','Toyota',2019,'Xăng','Số tự động','Qua sử dụng','Bán chuyên','68000','Indonesia',890000000,'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(9,'Mazda 3 1.5L Luxury 2023','Mazda',2023,'Xăng','Số tự động','Mới','Bán chuyên','5000','Việt Nam',680000000,'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(10,'Honda City 1.5 RS 2022','Honda',2022,'Xăng','Số tự động','Qua sử dụng','Cá nhân','28000','Thái Lan',560000000,'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(11,'Kia Morning Si MT 2020','Kia',2020,'Xăng','Số sàn','Qua sử dụng','Cá nhân','41000','Hàn Quốc',310000000,'https://images.unsplash.com/photo-1616422285623-13ff0162193c?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55'),(12,'Ford Everest Titanium 4x4 2021','Ford',2021,'Dầu Diesel','Số tự động','Qua sử dụng','Bán chuyên','47000','Thái Lan',1050000000,'https://images.unsplash.com/photo-1532581291347-9c39cf10a73c?w=600&auto=format&fit=crop&q=80','2026-05-23 12:55:55');
-/*!40000 ALTER TABLE `xe_oto` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2026-05-23 13:36:09
--- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
---
--- Host: 127.0.0.1    Database: showroom_oto
--- ------------------------------------------------------
--- Server version	5.5.5-10.4.32-MariaDB
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
---
--- Table structure for table `xe_oto`
---
-
-DROP TABLE IF EXISTS `xe_oto`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `xe_oto` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `ten_xe` varchar(255) NOT NULL,
-  `gia` decimal(15,2) NOT NULL,
+  `gia_xe` decimal(15,2) DEFAULT NULL,
   `nam_san_xuat` int(11) NOT NULL,
   `hang_xe` varchar(100) NOT NULL,
   `nhien_lieu` varchar(50) NOT NULL,
   `hop_so` varchar(50) NOT NULL,
   `tinh_trang` varchar(50) NOT NULL,
+  `hinh_anh` varchar(255) DEFAULT NULL,
+  `hinh_anh_1` varchar(255) DEFAULT NULL,
+  `hinh_anh_2` varchar(255) DEFAULT NULL,
+  `hinh_anh_3` varchar(255) DEFAULT NULL,
+  `anh_xe` text DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -653,7 +542,7 @@ CREATE TABLE `xe_oto` (
 
 LOCK TABLES `xe_oto` WRITE;
 /*!40000 ALTER TABLE `xe_oto` DISABLE KEYS */;
-INSERT INTO `xe_oto` VALUES (1,'Toyota Vios 1.5G CVT',545000000.00,2023,'Toyota','Xăng','Số tự động','Mới'),(2,'Toyota Corolla Cross 1.8V',860000000.00,2022,'Toyota','Xăng','Số tự động','Qua sử dụng'),(3,'Toyota Fortuner 2.4 AT',980000000.00,2021,'Toyota','Dầu Diesel','Số tự động','Qua sử dụng'),(4,'Honda City RS',569000000.00,2024,'Honda','Xăng','Số tự động','Mới'),(5,'Honda Civic G',789000000.00,2022,'Honda','Xăng','Số tự động','Qua sử dụng'),(6,'Honda CR-V L',1050000000.00,2023,'Honda','Xăng','Số tự động','Mới'),(7,'Nissan Almera CVT',529000000.00,2022,'Nissan','Xăng','Số tự động','Qua sử dụng'),(8,'Nissan Navara EL',685000000.00,2021,'Nissan','Dầu Diesel','Số tự động','Qua sử dụng'),(9,'Nissan Terra V',899000000.00,2023,'Nissan','Dầu Diesel','Số tự động','Mới'),(10,'Mazda 3 Luxury',669000000.00,2024,'Mazda','Xăng','Số tự động','Mới'),(11,'Mazda CX-5 Premium',879000000.00,2022,'Mazda','Xăng','Số tự động','Qua sử dụng'),(12,'Mazda BT-50',720000000.00,2021,'Mazda','Dầu Diesel','Số sàn','Qua sử dụng'),(13,'Hyundai Accent AT',535000000.00,2023,'Hyundai','Xăng','Số tự động','Mới'),(14,'Hyundai Tucson Diesel',925000000.00,2022,'Hyundai','Dầu Diesel','Số tự động','Qua sử dụng'),(15,'Hyundai SantaFe Premium',1180000000.00,2024,'Hyundai','Dầu Diesel','Số tự động','Mới'),(16,'Kia K3 Deluxe',619000000.00,2023,'Kia','Xăng','Số tự động','Mới'),(17,'Kia Seltos Luxury',699000000.00,2022,'Kia','Xăng','Số tự động','Qua sử dụng'),(18,'Kia Carnival Diesel',1299000000.00,2024,'Kia','Dầu Diesel','Số tự động','Mới'),(19,'Ford Ranger XLS',745000000.00,2022,'Ford','Dầu Diesel','Số tự động','Qua sử dụng'),(20,'Ford Everest Titanium',1399000000.00,2024,'Ford','Dầu Diesel','Số tự động','Mới'),(21,'Ford Territory Trend',822000000.00,2023,'Ford','Xăng','Số tự động','Mới');
+INSERT INTO `xe_oto` VALUES (1,'Toyota Vios 1.5G CVT',545000000.00,2023,'Toyota','Xăng','Số tự động','Mới',NULL,'images/vios1.jpg','images/vios2.jpg','images/vios3.jpg','https://images.unsplash.com/photo-1749058983193-4fc66ce597ce?q=80&w=1544&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),(2,'Toyota Corolla Cross 1.8V',860000000.00,2022,'Toyota','Xăng','Số tự động','Qua sử dụng',NULL,'images/crollacross1.jpg','images/crollacross2.jpg','images/crollacross3.jpg','https://images.unsplash.com/photo-1617469767053-d3b523a0b982?q=80&w=1531&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),(3,'Toyota Fortuner 2.4 AT',980000000.00,2021,'Toyota','Dầu Diesel','Số tự động','Qua sử dụng',NULL,'images/ToyotaFortuner1.jpg','images/ToyotaFortuner2.jpg','images/ToyotaFortuner3.jpg','https://images.unsplash.com/photo-1619767886645-0ae16581bf6b?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),(4,'Honda City RS',569000000.00,2024,'Honda','Xăng','Số tự động','Mới',NULL,'images/Cityrs1.jpg','images/Cityrs2.jpg','images/Cityrs3.jpg','https://images.unsplash.com/photo-1614152204567-04903fff36b0?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),(5,'Honda Civic G',789000000.00,2022,'Honda','Xăng','Số tự động','Qua sử dụng',NULL,'images/CivicG1.jpg','images/CivicG2.jpg','images/CivicG3.jpg','https://images.unsplash.com/photo-1610768207795-72169abdf0d4?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),(6,'Honda CR-V L',1050000000.00,2023,'Honda','Xăng','Số tự động','Mới',NULL,'images/CRVL1.jpg','images/CRVL2.jpg','images/CRVL3.jpg','https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=600&q=80'),(7,'Nissan Almera CVT',529000000.00,2022,'Nissan','Xăng','Số tự động','Qua sử dụng',NULL,'images/NissanAlmera1.jpg','images/NissanAlmera2.jpg','images/NissanAlmera3.jpg','https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80'),(8,'Nissan Navara EL',685000000.00,2021,'Nissan','Dầu Diesel','Số tự động','Qua sử dụng',NULL,'images/NissanNavara1.jpg','images/NissanNavara2.jpg','images/NissanNavara3.jpg','https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80'),(9,'Nissan Terra V',899000000.00,2023,'Nissan','Dầu Diesel','Số tự động','Mới',NULL,'images/NissanTerra1.jpg','images/NissanTerra2.jpg','images/NissanTerra3.jpg','https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80'),(10,'Mazda 3 Luxury',669000000.00,2024,'Mazda','Xăng','Số tự động','Mới',NULL,'images/mazda3lux1.jpg','images/mazda3lux2.jpg','images/mazda3lux3.jpg','https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80'),(11,'Mazda CX-5 Premium',879000000.00,2022,'Mazda','Xăng','Số tự động','Qua sử dụng',NULL,'images/MazdaCX5Pre1.jpg','images/MazdaCX5Pre2.jpg','images/MazdaCX5Pre3.jpg','https://images.unsplash.com/photo-1743114713466-f12a85992a75?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),(12,'Mazda BT-50',720000000.00,2021,'Mazda','Dầu Diesel','Số sàn','Qua sử dụng',NULL,'images/MazdaBT1.jpg','images/MazdaBT2.jpg','images/MazdaBT3.jpg','https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80'),(13,'Hyundai Accent AT',535000000.00,2023,'Hyundai','Xăng','Số tự động','Mới',NULL,'images/HyundaiAccent1.jpg','images/HyundaiAccent2.jpg','images/HyundaiAccent3.jpg','https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=600&q=80'),(14,'Hyundai Tucson Diesel',925000000.00,2022,'Hyundai','Dầu Diesel','Số tự động','Qua sử dụng',NULL,'images/HyundaiTucson1.jpg','images/HyundaiTucson2.jpg','images/HyundaiTucson3.jpg','https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&w=600&q=80'),(15,'Hyundai SantaFe Premium',1180000000.00,2024,'Hyundai','Dầu Diesel','Số tự động','Mới',NULL,'images/HyundaiSantaFe1.jpg','images/HyundaiSantaFe2.jpg','images/HyundaiSantaFe3.jpg','https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80'),(16,'Kia K3 Deluxe',619000000.00,2023,'Kia','Xăng','Số tự động','Mới',NULL,'images/KiaK3Deluxe1.jpg','images/KiaK3Deluxe2.jpg','images/KiaK3Deluxe3.jpg','https://images.unsplash.com/photo-1592805723127-004b174a1798?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),(17,'Kia Seltos Luxury',699000000.00,2022,'Kia','Xăng','Số tự động','Qua sử dụng',NULL,'images/KiaSeltos1.jpg','images/KiaSeltos2.jpg','images/KiaSeltos3.jpg','https://images.unsplash.com/photo-1632245889029-e406faaa34cd?auto=format&fit=crop&w=600&q=80'),(18,'Kia Carnival Diesel',1299000000.00,2024,'Kia','Dầu Diesel','Số tự động','Mới',NULL,'images/KiaCarnival1.jpg','images/KiaCarnival2.jpg','images/KiaCarnival3.jpg','https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&w=600&q=80'),(19,'Ford Ranger XLS',745000000.00,2022,'Ford','Dầu Diesel','Số tự động','Qua sử dụng',NULL,'images/FordRanger1.jpg','images/FordRanger2.jpg','images/FordRanger3.jpg','https://images.unsplash.com/photo-1532581291347-9c39cf10a73c?auto=format&fit=crop&w=600&q=80'),(20,'Ford Everest Titanium',1399000000.00,2024,'Ford','Dầu Diesel','Số tự động','Mới',NULL,'images/FordEverest1.jpg','images/FordEverest2.jpg','images/FordEverest3.jpg','https://images.unsplash.com/photo-1678037055154-492f436ea5a4?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'),(21,'Ford Territory Trend',822000000.00,2023,'Ford','Xăng','Số tự động','Mới',NULL,'images/FordTerritory1.jpg','images/FordTerritory2.jpg','images/FordTerritory3.jpg','https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=600&q=80');
 /*!40000 ALTER TABLE `xe_oto` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -666,4 +555,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-05-23 13:36:09
+-- Dump completed on 2026-06-20 22:20:19
