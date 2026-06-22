@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (fuel)       queryParams.append('fuel', fuel);
         if (gearbox)    queryParams.append('gearbox', gearbox);
         if (status)     queryParams.append('status', status);
-        if (activeTab)  queryParams.append('tab', activeTab);
         const container = document.getElementById('danh-sach-xe');
         if (container) {
             container.innerHTML = `
