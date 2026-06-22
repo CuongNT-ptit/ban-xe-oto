@@ -20,7 +20,7 @@ db.connect((err) => {
     console.log('✅ Kết nối database thành công!');
 });
 app.get('/api/cars', (req, res) => {
-const { brand, fuel, gearbox, status, sortPrice, sortYear } = req.query;
+const { brand, fuel, gearbox, status, sortPrice, sortYear, tab } = req.query;
 
     let sql    = 'SELECT * FROM xe_oto WHERE 1=1';
     let params = [];
@@ -42,6 +42,10 @@ const { brand, fuel, gearbox, status, sortPrice, sortYear } = req.query;
     if (status) {
         sql += ' AND LOWER(tinh_trang) = LOWER(?)';
         params.push(status);
+    }
+    if ( tab && tab !== 'Tất cả'){
+        sql+= ' AND LOWER(loai_nguoi_ban) = LOWER(?)';
+        params.push(tab);
     }
 
     if (sortPrice === 'asc') {

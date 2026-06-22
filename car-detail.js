@@ -5,7 +5,7 @@ fetch(`http://localhost:5000/api/cars/${id}`)
 .then(res => res.json())
 .then(xe => {
     document.getElementById("tenXe").innerText = xe.ten_xe;
-    document.getElementById("giaXe").innerText = Number(xe.gia).toLocaleString('vi-VN') + " đ";
+    document.getElementById("giaXe").innerText = Number(xe.gia_xe).toLocaleString('vi-VN') + " đ";
     document.getElementById("hangXe").innerText = xe.hang_xe;
     document.getElementById("namSX").innerText = xe.nam_san_xuat;
     document.getElementById("nhienLieu").innerText = xe.nhien_lieu;
