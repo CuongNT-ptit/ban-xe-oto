@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const fuel      = document.getElementById('filter-fuel')?.value;
         const gearbox   = document.getElementById('filter-gearbox')?.value;
         const status    = document.getElementById('filter-status')?.value;
-        const activeTab = document.querySelector('.tab-item.active')?.innerText.trim();
 
         if (priceSort)  queryParams.append('sortPrice', priceSort);
         if (yearSort)   queryParams.append('sortYear', yearSort);
@@ -84,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (gearbox)    queryParams.append('gearbox', gearbox);
         if (status)     queryParams.append('status', status);
         if (activeTab)  queryParams.append('tab', activeTab);
-
         const container = document.getElementById('danh-sach-xe');
         if (container) {
             container.innerHTML = `

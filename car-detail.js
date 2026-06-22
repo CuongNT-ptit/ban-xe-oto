@@ -12,7 +12,6 @@ fetch(`http://localhost:5000/api/cars/${id}`)
     document.getElementById("hopSo").innerText = xe.hop_so;
     document.getElementById("mainImage").src = xe.hinh_anh_1;
     
-    // Xử lý ảnh thumb
     const thumbs = [xe.hinh_anh_1, xe.hinh_anh_2, xe.hinh_anh_3];
     thumbs.forEach((img, i) => {
         const el = document.getElementById(`img${i+1}`);
@@ -22,7 +21,6 @@ fetch(`http://localhost:5000/api/cars/${id}`)
         }
     });
 
-    // Modal logic
     const modal = document.getElementById("contactModal");
     document.querySelector('.btn-contact').onclick = () => modal.style.display = "block";
     document.querySelector('.close').onclick = () => modal.style.display = "none";
